@@ -77,11 +77,11 @@ Before running stage 2, we determined point cloud points that lay within each bo
 
 We created a deep neural network and trained/evaluated it using the data in the trainval folder, split 80/20. This was done independently withstage 1. 
 
-#Running the Notebooks
+# Running the Notebooks
 
 Only final.ipynb needs to be run to generate the .csv files.
 
-##Final.ipynb
+## Final.ipynb
 
 All the files needed for this notebook are existing in GitHub.  
 
@@ -91,7 +91,7 @@ Next, set the file path constants PROJECT_ROOT and TEST_FILES to the full paths 
 
 Next, run imports and evaluate sections to generate the csv files. 
 
-##Stage1.ipynb
+## Stage1.ipynb
 
 The first cell loads the Google Drive where the project files are located. Run the Install Models section to install the Object Detection API and set the file path constants to where the project files and data are located. 
 
@@ -103,7 +103,7 @@ Run the cells in the “Save Model and Run on Test Images” section to save the
 
 Run the “Visualize Single Image” section to visualize all the bounding boxes detected on a random image found in the test folder. 
 
-##Stage2.ipynb
+## Stage2.ipynb
 
 The first cell loads the Google Drive where the project files are located. Be sure to set the file path constants to where the project files and data are located. 
 
