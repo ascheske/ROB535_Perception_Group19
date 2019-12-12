@@ -64,11 +64,11 @@ For this project, we decided to split the classification problem into two stages
 
 ## Stage 1
 
-Stage 1 generates a list of 2D bounding boxes and their respective labels from an input image. To do this, we used a used the TensorFlow Object Detection API with the Faster-RCNN-ResNet101 found in the TensorFlow Object Detection Model Library. This network was pretrained on the Kitti dataset to aid in faster training for this project. 
+Stage 1 generates a list of 2D bounding boxes and their respective labels from an input image. To do this, we used the TensorFlow Object Detection API with the Faster-RCNN-ResNet101 found in the TensorFlow Object Detection Model Library. This network was pretrained on the Kitti dataset to aid in faster training for this project. 
 
 To train the network for our purposes, we split the images in the trainval folder 80/20 to test and validate the Faster-RCNN-ResNet101 network on the given data. The ground truth bounding boxes in these images were determined from the bbox.bin file for each image. Training and evaluation data were stored as .record files for the TensorFlow Object Detection API to recognize. 
 
-Training was done on Google Colab go until the validation accuracy leveled off at around 10000 steps.
+Training was done on Google Colab until the validation accuracy leveled off at around 10000 steps.
 
 
 ## Stage 2
