@@ -1,7 +1,9 @@
 Code for training and testing are in the notebooks stage1.ipynb and stage2.ipynb. The final step to generate the csv files can be found in final.ipynb. Stage1.ipynb and stage2.ipynb generate a lot of intermediate data files, and doing so will take lots of time. Some of these data files were too large for GitHub, so they can be downloaded with this link : https://drive.google.com/open?id=1dhmdiUBOSm7D9tQvZUbXFmgkGTNRRCgs
 
 When extracted, you should have the directory structure as follows:
+`
     .
+    
     ├── Final.ipynb
     ├── README.md
     ├── faster_rcnn_resnet101_kitti_2018_01_28
@@ -55,7 +57,7 @@ When extracted, you should have the directory structure as follows:
     │   ├── results-trained-resnet101-task2.csv
     │   └── template.csv
     └── stage2.ipynb
-
+`
 #Overview
 
 For this project, we decided to split the classification problem into two stages. In stage 1, we used an existing algorithm to predict bounding boxes and labels for vehicles in each image frame. Next, in stage 2, we used the predicted bounding boxes detected in stage 1, point cloud statistics, and predicted labels to predict the distance and angle to the camera. With the distance and angle for all detected vehicles in each image from stage 2 and the labels from stage 1, we can solve task 1 and task 2 of the project. Both stages used TensorFlow 1.15 on Google Colab. 
