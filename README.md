@@ -58,7 +58,7 @@ When extracted, you should have the directory structure as follows:
     │   └── template.csv
     └── stage2.ipynb
 `
-#Overview
+# Overview
 
 For this project, we decided to split the classification problem into two stages. In stage 1, we used an existing algorithm to predict bounding boxes and labels for vehicles in each image frame. Next, in stage 2, we used the predicted bounding boxes detected in stage 1, point cloud statistics, and predicted labels to predict the distance and angle to the camera. With the distance and angle for all detected vehicles in each image from stage 2 and the labels from stage 1, we can solve task 1 and task 2 of the project. Both stages used TensorFlow 1.15 on Google Colab. 
 
